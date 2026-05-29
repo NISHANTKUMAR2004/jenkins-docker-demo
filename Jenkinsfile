@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t jenkins-demo:v1 .'
+                bat 'docker build -t jenkins-demo:v1 .'
             }
         }
     }
